@@ -1,0 +1,73 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e5e7eb; /* Color de fondo ligeramente azulado */
+    margin: 0;
+    padding: 20px;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: 300px auto; /* Sidebar y contenido principal */
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.15); /* Sombra suave para el contenedor */
+  }
+  
+  .sidebar, .main-content {
+    background-color: #1e293b; /* Color de fondo oscuro */
+    color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    overflow: hidden;
+  }
+  
+  .card {
+    background-color: #0f172a; /* Fondo para las tarjetas */
+    color: #ffffff;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Sombra para las tarjetas */
+  }
+  
+  .card:not(:last-child) {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Separador de tarjetas */
+  }
+  
+  .card h2 {
+    margin-top: 0;
+    color: #38bdf8; /* Color azul claro para los títulos */
+  }
+  
+  .card p, .card li {
+    color: #94a3b8; /* Color gris azulado para texto */
+  }
+  
+  .card ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .card ul li::before {
+    content: '• ';
+    color: #38bdf8; /* Puntos azules para la lista */
+  }
+  
+  .button {
+    background-color: #22d3ee; /* Color azul claro para botones */
+    color: #0f172a;
+    padding: 10px 15px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #0ea5e9; /* Color azul al pasar el ratón */
+  }
+  
+  /* Ajustes adicionales para la responsividad y otros detalles pueden ser necesarios */
+  
